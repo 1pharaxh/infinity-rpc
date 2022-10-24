@@ -13,18 +13,43 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
-
+using DiscordRpcDemo;
+using System.Windows.Threading;
+using System.Threading;
 namespace infinity_rpc
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
+
+        private DiscordRpc.EventHandlers handlers;
+        private DiscordRpc.RichPresence presence;
+        DispatcherTimer timer = new DispatcherTimer();
         public MainWindow()
         {
             InitializeComponent();
+            timer.Tick += new EventHandler(WaitingEvent);
+            timer.Interval = new TimeSpan(0, 0, 2);
+            timer.Start();
+        }
+        public void WaitingEvent(object Source, EventArgs e) {
+            this.handlers = default(DiscordRpc.EventHandlers);
+            DiscordRpc.Initialize("", ref this.handlers, true, null);
+            this.handlers = default(DiscordRpc.EventHandlers);
+            DiscordRpc.Initialize("", ref this.handlers, true, null);
+            //This is the active process
+            String process = GetActiveWindowTitle();
+            // We want to know the name of application here
+            var result = process.Substring(process.LastIndexOf('-') + 1);
+            this.presence.details = process;
+            this.presence.state = $"Playing {result}";
+            this.presence.largeImageKey = "";
+            this.presence.smallImageKey = "";
+            DiscordRpc.UpdatePresence(ref this.presence);
         }
         [DllImport("user32.dll")]
         static extern IntPtr GetForegroundWindow();
@@ -51,4 +76,5 @@ namespace infinity_rpc
             MessageBox.Show($"{Title}");
         }
     }
+
 }

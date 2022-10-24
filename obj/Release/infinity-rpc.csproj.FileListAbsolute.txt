@@ -1,0 +1,16 @@
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\bin\Release\infinity-rpc.exe.config
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\bin\Release\infinity-rpc.exe
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\bin\Release\infinity-rpc.pdb
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc.csproj.AssemblyReference.cache
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc.csproj.SuggestedBindingRedirects.cache
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\MainWindow.g.cs
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\App.g.cs
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc_MarkupCompile.cache
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc_MarkupCompile.lref
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\MainWindow.baml
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc.g.resources
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity_rpc.Properties.Resources.resources
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc.csproj.GenerateResource.cache
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc.csproj.CoreCompileInputs.cache
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc.exe
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\infinity-rpc.pdb

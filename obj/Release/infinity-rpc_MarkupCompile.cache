@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Debug\
+C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\obj\Release\
 infinity_rpc
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\akars\OneDrive\Desktop\Coding Projects\infinity-rpc\App.xaml
 1219584333
 
-7272457140
+6-1940421538
 13-1310406943
 MainWindow.xaml;
 
-True
+False
 
