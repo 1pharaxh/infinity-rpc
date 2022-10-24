@@ -44,12 +44,27 @@ namespace infinity_rpc
             //This is the active process
             String process = GetActiveWindowTitle();
             // We want to know the name of application here
-            var result = process.Substring(process.LastIndexOf('-') + 1);
-            this.presence.details = process;
-            this.presence.state = $"Playing {result}";
-            this.presence.largeImageKey = "";
-            this.presence.smallImageKey = "";
-            DiscordRpc.UpdatePresence(ref this.presence);
+            String result = process.Substring(process.LastIndexOf('-') + 1);
+
+            String[] resultArr = { "Google Chrome", "Explorer", "Edge" };
+            if (result == "Google Chrome") {
+                this.presence.details = $"Browsing {process}";
+                this.presence.state = $"Playing{result}";
+                this.presence.largeImageKey = "google";                
+            }
+            if (result == process)
+            {
+                result = "Explorer";
+                this.presence.details = $"Browsing Folder {process}";
+                this.presence.state = "Playing Explorer";
+                this.presence.largeImageKey = "explorer";
+            }
+            this.presence.smallImageKey = "infinity-rpc-1";
+            if (resultArr.Contains(result))
+            {
+                DiscordRpc.UpdatePresence(ref this.presence);
+            }
+            
         }
         [DllImport("user32.dll")]
         static extern IntPtr GetForegroundWindow();
